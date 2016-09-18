@@ -1,0 +1,223 @@
+html,body{
+	margin:0;
+	padding:0;
+	font-family:'Montserrat', Arial,Helvetica,sans-serif;
+	font-size:12pt;
+}
+.container{
+	max-width:960px;
+	width:100%;
+	min-width:300px;
+	margin:0 auto;
+	padding-top:20px;
+}
+.logo{
+	
+	font-weight:bold;
+	margin:0 2% 0 2%;
+	display:inline-block;
+	font-size:12pt;
+	text-align:center;
+	margin-top:0;
+	vertical-align:top;
+}
+.logo p{
+	margin:0 auto;
+	padding:0;
+	line-height:0.7;
+	display:inline-block;
+	font-size:1.8em;
+	text-align:left;
+	position:relative;
+	top:10px;
+	
+}
+.splash{
+	z-index:9999;
+	width:100%;
+	color:white;
+	background: #54D17A;
+	min-height:100%;
+	position:absolute;
+	left:0;
+	top:0;
+	font-size:12pt;
+	text-align:center;
+}
+.splash .logo{
+	margin-top:4%;
+}
+.splash .logo p{
+	font-size:6em;
+	
+}
+.splash button{
+	display:block;
+	text-align:center;
+	border:0;
+	padding:20px;
+	margin:0 auto;
+	color: #54D17A;
+	border-radius:10px;
+	font-weight:bold;
+	background-color:white;
+	margin-top:40px;
+	font-size:1.3em;
+}
+.splash .winner-logo{
+	margin-top:2%;
+}
+.splash .winner-logo p{
+	font-size:1.7em;
+	margin:0;
+}
+.winner-declaration{
+	font-size:4em;
+	font-weight:bold;
+	margin-top:80px;
+	margin-bottom:50px;
+	position:relative;
+	width:100%;
+	text-align:center;
+}
+.winner-declaration p{
+	position:relative;
+	display:inline-block;
+	top: -10%;
+    transform: translateY(10%);
+}
+.winner-declaration svg{
+	position:absolute;
+	z-index:-1;
+	width:250px;
+	height:auto;
+	left:0;
+	right:0;
+	margin:0 auto;
+	top:0;
+	text-align:center;
+}
+.p1 .splash-button{
+	color: #3688C3;
+	
+}
+.p2 .splash-button{
+	color: #FFA000;
+}
+.tracker{
+	width:100%;
+	font-size:0;
+	height:90px;
+	padding:0;
+	margin-bottom:5%;
+	position:relative;
+}
+.tracker .logo{
+	height:100%;
+	width:16%;
+}
+.turn{
+	width:40%;
+	display:inline-block;
+	height:100%;
+	text-align:center;
+	vertical-align:top;
+	background-color:#B5B7B8;
+	
+}
+.player1.active{
+	background-color:#FFA000;
+}
+.p1{
+	background-color:#FFA000;
+}
+.player2.active{
+	background: #3688C3;
+}
+.p2{
+	background: #3688C3;
+}
+
+
+.board{
+	width:60%;
+	margin:0 auto;
+	z-index:5;
+	position:relative;
+}
+.row{
+	display:block;
+	width:100%;
+	margin-bottom:3%;
+	font-size:0;
+}
+.square{
+	width:31.333%;
+	background-color:#B5B7B8;
+	height:200px;
+	display:inline-block;
+	margin-right:3%;
+	color:white;
+	text-align:center;
+	font-size:12pt;
+	position:relative;
+	vertical-align:top;
+	
+}
+
+.text{
+	top: 50%;
+    transform: translateY(-50%);
+	display:inline-block;
+	position:relative;
+}
+.square:nth-child(3n){
+	margin-right:0;
+}
+.svg-bg{
+	width:100%;
+	height:100%;
+}
+.svg-container{
+	width:60%;
+	height:60%;
+	margin:0 auto;
+	top: 50%;
+    transform: translateY(-50%);
+	position:relative;
+}
+.letter{
+	fill:white;
+	
+}
+
+@media (max-width:700px){
+	.square p{
+		font-size:5em;
+	}
+}
+@media(max-width:430px){
+	.board{
+		width:95%;
+	}
+}
+@media (max-width:400px){
+	.tracker{
+		width:95%;
+		margin:0 auto;
+		margin-bottom:5%;
+	}
+	.turn{
+		width:31.333%;
+		margin-right:3%
+	}
+	.turn:last-child{
+		margin-right:0;
+	}
+	.tracker .logo{
+		width:31.333%;
+		margin:0;
+		margin-right:3%;
+	}
+	
+}
